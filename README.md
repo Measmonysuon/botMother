@@ -6,7 +6,7 @@ Main Bot (botMother) គឺជាប្រព័ន្ធគ្រប់គ្�
 ## ការចាប់ផ្តើម
 
 ### ១. ការចូលប្រើប្រាស់ 
-- ចូលទៅ [@botMotherbymeasmony_bo](t.me/botMotherbymeasmony_bot)t
+- ចូលទៅ [@botMotherbymeasmony_bot](t.me/botMotherbymeasmony_bot)
 - បញ្ជូន `/start` ទៅ Bot មេ (@botMotherbymeasmony_bot)
 - ទទួលបានសារស្វាគមន៍ និងមុខងារជ្រើសរើស
 
