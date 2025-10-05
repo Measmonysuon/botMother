@@ -57,52 +57,69 @@ Bot Shop គឺជាប្រព័ន្ធអេឡិចត្រូនិ�
 ```
 **ជំហាន:**
 1. ជ្រើសរើសប្រភេទ Account
-2. បញ្ចូលព័ត៌មាន Accounts (UID, Password, Email, Email Password, 2FA, Cookie)
+2. បញ្ចូលព័ត៌មាន Accounts តាមទម្រង់ខាងក្រោម
+
+**ទម្រង់បញ្ចូលព័ត៌មាន Account:**
+```
+UID: [Facebook User ID ឬ Username]
+Password: [Password របស់ Account]
+Email: [Email ដែលភ្ជាប់នឹង Account]
+Email Password: [Password របស់ Email]
+2FA: [Two-Factor Authentication Code ឬ Recovery Code]
+Cookie: [Facebook Cookie បើមាន]
+```
+
+**ឧទាហរណ៍:**
+```
+UID: john.doe.123
+Password: mypassword123
+Email: johndoe@gmail.com
+Email Password: emailpass456
+2FA: ABC123DEF456
+Cookie: datr=xyz123; sb=abc456; c_user=123456789; ...
+```
+
+**ការពន្យល់ព័ត៌មាននីមួយៗ:**
+
+**UID (User ID):**
+- Facebook User ID ឬ Username
+- ឧទាហរណ៍: `john.doe.123` ឬ `1000123456789`
+- ជាព័ត៌មានចាំបាច់សម្រាប់ Login
+
+**Password:**
+- Password របស់ Facebook Account
+- ឧទាហរណ៍: `mypassword123`
+- ជាព័ត៌មានចាំបាច់សម្រាប់ Login
+
+**Email:**
+- Email Address ដែលភ្ជាប់នឹង Facebook Account
+- ឧទាហរណ៍: `johndoe@gmail.com`
+- ជាព័ត៌មានចាំបាច់សម្រាប់ Recovery
+
+**Email Password:**
+- Password របស់ Email Account
+- ឧទាហរណ៍: `emailpass456`
+- ជាព័ត៌មានចាំបាច់សម្រាប់ Email Recovery
+
+**2FA (Two-Factor Authentication):**
+- Recovery Code ឬ Backup Code របស់ 2FA
+- ឧទាហរណ៍: `ABC123DEF456`
+- ជាព័ត៌មានជម្រើស (ប្រសិនបើមាន)
+
+**Cookie:**
+- Facebook Cookie សម្រាប់ Session
+- ឧទាហរណ៍: `datr=xyz123; sb=abc456; c_user=123456789; xs=abc123def456;`
+- ជាព័ត៌មានជម្រើស (ប្រសិនបើមាន)
+
+**ការប្រុងប្រយ័ត្ន:**
+- ព័ត៌មានទាំងអស់ត្រូវតែពិតប្រាកដ
+- UID និង Email ត្រូវតែមានចំណុចដែលពាក់ព័ន្ធ
+- 2FA និង Cookie ជាជម្រើស (មិនចាំបាច់)
+- បញ្ចូលព័ត៌មានមួយ Account ក្នុងមួយជួរ
+- កុំភ្លេចបញ្ចូលតម្លៃក្នុងមួយ Account
+
 3. បញ្ចូលតម្លៃក្នុងមួយ Account
 4. បញ្ជាក់ការបន្ថែម
-
-### ៣. ការកំណត់តម្លៃ
-```
-ប្រើប្រាស់: /set_price
-```
-- ជ្រើសរើសប្រភេទ Account
-- បញ្ចូលតម្លៃថ្មីក្នុងមួយ Account
-
-### ៤. ការកែប្រែប្រភេទ Account
-```
-ប្រើប្រាស់: /edit_account_type
-```
-- ជ្រើសរើសប្រភេទ Account ដែលចង់កែប្រែ
-- បញ្ចូលឈ្មោះប្រភេទថ្មី
-
-### ៥. ការមើលទិន្នន័យ
-- មើលចំនួន Accounts ដែលលក់ទៅហើយ
-- មើលចំនួន Accounts ដែលនៅសល់
-- មើលប្រវត្តិការលក់
-
-## ប៊ូតុងចម្បង
-
-### សម្រាប់អ្នកទិញ:
-- **Check Stock**: មើល Accounts ដែលមានស្រាប់
-
-### សម្រាប់អ្នកលក់:
-- **Check Stock**: មើល Stock និងការលក់
-- បាតុភូតចម្រុះសម្រាប់ការគ្រប់គ្រង
-
-## លក្ខខ័ណ្ឌនិងការប្រុងប្រយ័ត្ន
-
-### លក្ខខ័ណ្ឌសេវាកម្ម:
-1. ម្ចាស់ Bot មិនមានពាក់ពាន់នឹងការទិញលក់ Accounts
-2. បញ្ហា Accounts សូមទំនាក់ទំនងអ្នកលក់ផ្ទាល់
-3. គណនីថ្មីៗអាចប្រឈមនឹងការ Checkpoint
-
-### គន្លឹះសុវត្ថិភាព:
-1. ប្រើ Anti-Detect Browser ឬ Extension សម្រាប់ Login
-2. Active លើ Device ថ្មីយ៉ាងហោចណាស់ 72 ម៉ោង
-3. មិនត្រូវដូរ Password និង Email ក្នុងរយៈពេល 14 ថ្ងៃ
-4. មិនត្រូវ Login លើ Device ផ្សេងក្នុងរយៈពេល Active
-5. ប្រើ VPN ឬ Proxy ដែលមានគុណភាព
-
 ## ការដោះស្រាយបញ្ហា
 
 ### បញ្ហាទូទៅ:
